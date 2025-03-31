@@ -254,6 +254,7 @@
             this.Controls.Add(this.BtnModificar);
             this.Controls.Add(this.DgvInventario);
             this.Name = "FrmInicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion De Inventario";
             ((System.ComponentModel.ISupportInitialize)(this.DgvInventario)).EndInit();
             this.MrcAgregar.ResumeLayout(false);
