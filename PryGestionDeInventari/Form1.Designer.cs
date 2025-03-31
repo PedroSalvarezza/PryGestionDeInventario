@@ -95,7 +95,7 @@
             // 
             // BtnEliminar
             // 
-            this.BtnEliminar.Location = new System.Drawing.Point(668, 311);
+            this.BtnEliminar.Location = new System.Drawing.Point(667, 310);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(75, 23);
             this.BtnEliminar.TabIndex = 9;
@@ -226,7 +226,7 @@
             // CmbEliminar
             // 
             this.CmbEliminar.FormattingEnabled = true;
-            this.CmbEliminar.Location = new System.Drawing.Point(668, 283);
+            this.CmbEliminar.Location = new System.Drawing.Point(667, 283);
             this.CmbEliminar.Name = "CmbEliminar";
             this.CmbEliminar.Size = new System.Drawing.Size(121, 21);
             this.CmbEliminar.TabIndex = 22;
@@ -234,7 +234,7 @@
             // LblEliminar
             // 
             this.LblEliminar.AutoSize = true;
-            this.LblEliminar.Location = new System.Drawing.Point(665, 265);
+            this.LblEliminar.Location = new System.Drawing.Point(664, 265);
             this.LblEliminar.Name = "LblEliminar";
             this.LblEliminar.Size = new System.Drawing.Size(46, 13);
             this.LblEliminar.TabIndex = 23;
