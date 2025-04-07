@@ -49,6 +49,12 @@
             this.LblModificar = new System.Windows.Forms.Label();
             this.CmbEliminar = new System.Windows.Forms.ComboBox();
             this.LblEliminar = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DgvInventario)).BeginInit();
             this.MrcAgregar.SuspendLayout();
             this.SuspendLayout();
@@ -56,9 +62,16 @@
             // DgvInventario
             // 
             this.DgvInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvInventario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6});
             this.DgvInventario.Location = new System.Drawing.Point(23, 13);
             this.DgvInventario.Name = "DgvInventario";
-            this.DgvInventario.Size = new System.Drawing.Size(597, 213);
+            this.DgvInventario.Size = new System.Drawing.Size(644, 213);
             this.DgvInventario.TabIndex = 0;
             // 
             // textBox1
@@ -240,6 +253,36 @@
             this.LblEliminar.TabIndex = 23;
             this.LblEliminar.Text = "Eliminar:";
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Codigo";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Descripcion";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Precio";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Stock";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Categoria";
+            this.Column6.Name = "Column6";
+            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -287,6 +330,12 @@
         private System.Windows.Forms.Label LblModificar;
         private System.Windows.Forms.ComboBox CmbEliminar;
         private System.Windows.Forms.Label LblEliminar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }
 
