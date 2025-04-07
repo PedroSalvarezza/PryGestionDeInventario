@@ -29,7 +29,13 @@
         private void InitializeComponent()
         {
             this.DgvInventario = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TxtNombre = new System.Windows.Forms.TextBox();
             this.TxtCodigo = new System.Windows.Forms.TextBox();
             this.BtnModificar = new System.Windows.Forms.Button();
             this.BtnAgregar = new System.Windows.Forms.Button();
@@ -49,12 +55,6 @@
             this.LblModificar = new System.Windows.Forms.Label();
             this.CmbEliminar = new System.Windows.Forms.ComboBox();
             this.LblEliminar = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DgvInventario)).BeginInit();
             this.MrcAgregar.SuspendLayout();
             this.SuspendLayout();
@@ -74,12 +74,42 @@
             this.DgvInventario.Size = new System.Drawing.Size(644, 213);
             this.DgvInventario.TabIndex = 0;
             // 
-            // textBox1
+            // Column1
             // 
-            this.textBox1.Location = new System.Drawing.Point(4, 80);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.Column1.HeaderText = "Codigo";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Descripcion";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Precio";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Stock";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Categoria";
+            this.Column6.Name = "Column6";
+            // 
+            // TxtNombre
+            // 
+            this.TxtNombre.Location = new System.Drawing.Point(4, 80);
+            this.TxtNombre.Name = "TxtNombre";
+            this.TxtNombre.Size = new System.Drawing.Size(100, 20);
+            this.TxtNombre.TabIndex = 1;
             // 
             // TxtCodigo
             // 
@@ -90,7 +120,7 @@
             // 
             // BtnModificar
             // 
-            this.BtnModificar.Location = new System.Drawing.Point(499, 311);
+            this.BtnModificar.Location = new System.Drawing.Point(499, 297);
             this.BtnModificar.Name = "BtnModificar";
             this.BtnModificar.Size = new System.Drawing.Size(75, 23);
             this.BtnModificar.TabIndex = 7;
@@ -108,7 +138,7 @@
             // 
             // BtnEliminar
             // 
-            this.BtnEliminar.Location = new System.Drawing.Point(667, 310);
+            this.BtnEliminar.Location = new System.Drawing.Point(499, 372);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(75, 23);
             this.BtnEliminar.TabIndex = 9;
@@ -202,7 +232,7 @@
             this.MrcAgregar.Controls.Add(this.LblPrecio);
             this.MrcAgregar.Controls.Add(this.LblCategoria);
             this.MrcAgregar.Controls.Add(this.BtnAgregar);
-            this.MrcAgregar.Controls.Add(this.textBox1);
+            this.MrcAgregar.Controls.Add(this.TxtNombre);
             this.MrcAgregar.Controls.Add(this.LblStock);
             this.MrcAgregar.Controls.Add(this.TxtCodigo);
             this.MrcAgregar.Controls.Add(this.TxtStock);
@@ -222,7 +252,7 @@
             // CmbModificar
             // 
             this.CmbModificar.FormattingEnabled = true;
-            this.CmbModificar.Location = new System.Drawing.Point(499, 284);
+            this.CmbModificar.Location = new System.Drawing.Point(499, 270);
             this.CmbModificar.Name = "CmbModificar";
             this.CmbModificar.Size = new System.Drawing.Size(121, 21);
             this.CmbModificar.TabIndex = 21;
@@ -230,7 +260,7 @@
             // LblModificar
             // 
             this.LblModificar.AutoSize = true;
-            this.LblModificar.Location = new System.Drawing.Point(496, 265);
+            this.LblModificar.Location = new System.Drawing.Point(496, 251);
             this.LblModificar.Name = "LblModificar";
             this.LblModificar.Size = new System.Drawing.Size(51, 13);
             this.LblModificar.TabIndex = 20;
@@ -239,7 +269,7 @@
             // CmbEliminar
             // 
             this.CmbEliminar.FormattingEnabled = true;
-            this.CmbEliminar.Location = new System.Drawing.Point(667, 283);
+            this.CmbEliminar.Location = new System.Drawing.Point(499, 345);
             this.CmbEliminar.Name = "CmbEliminar";
             this.CmbEliminar.Size = new System.Drawing.Size(121, 21);
             this.CmbEliminar.TabIndex = 22;
@@ -247,41 +277,11 @@
             // LblEliminar
             // 
             this.LblEliminar.AutoSize = true;
-            this.LblEliminar.Location = new System.Drawing.Point(664, 265);
+            this.LblEliminar.Location = new System.Drawing.Point(496, 327);
             this.LblEliminar.Name = "LblEliminar";
             this.LblEliminar.Size = new System.Drawing.Size(46, 13);
             this.LblEliminar.TabIndex = 23;
             this.LblEliminar.Text = "Eliminar:";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Codigo";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Descripcion";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Precio";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Stock";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Categoria";
-            this.Column6.Name = "Column6";
             // 
             // FrmInicio
             // 
@@ -310,7 +310,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView DgvInventario;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtNombre;
         private System.Windows.Forms.TextBox TxtCodigo;
         private System.Windows.Forms.Button BtnModificar;
         private System.Windows.Forms.Button BtnAgregar;
